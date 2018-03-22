@@ -444,7 +444,7 @@ var SimpleForm = function SimpleForm(_ref) {
     ),
     status === "sending" && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       "div",
-      { style: { color: "blue" }, __source: {
+      { className: "sending", __source: {
           fileName: _jsxFileName,
           lineNumber: 17
         },
@@ -454,7 +454,7 @@ var SimpleForm = function SimpleForm(_ref) {
     ),
     status === "error" && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       "div",
-      { style: { color: "red" }, __source: {
+      { className: "error", __source: {
           fileName: _jsxFileName,
           lineNumber: 18
         },
@@ -464,7 +464,7 @@ var SimpleForm = function SimpleForm(_ref) {
     ),
     status === "success" && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
       "div",
-      { style: { color: "green" }, __source: {
+      { className: "success", __source: {
           fileName: _jsxFileName,
           lineNumber: 19
         },

@@ -28,17 +28,17 @@ var SimpleForm = function SimpleForm(_ref) {
     ),
     status === "sending" && React.createElement(
       "div",
-      { style: { color: "blue" } },
+      { className: "sending" },
       "sending..."
     ),
     status === "error" && React.createElement(
       "div",
-      { style: { color: "red" } },
+      { className: "error" },
       "You are already Subscribed"
     ),
     status === "success" && React.createElement(
       "div",
-      { style: { color: "green" } },
+      { className: "success" },
       message
     )
   );

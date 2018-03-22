@@ -14,9 +14,9 @@ const SimpleForm = ({ status, message, className, style, onSubmitted }) => {
     <div className={className} style={style}>
       <input ref={node => (input = node)} type="email" placeholder="Your email" />
       <button onClick={submit}>Submit</button>
-      {status === "sending" && <div style={{ color: "blue" }}>sending...</div>}
-      {status === "error" && <div style={{ color: "red" }}>You are already Subscribed</div>}
-      {status === "success" && <div style={{ color: "green" }}>{message}</div>}
+      {status === "sending" && <div className="sending">sending...</div>}
+      {status === "error" && <div className="error">You are already Subscribed</div>}
+      {status === "success" && <div className="success">{message}</div>}
     </div>
   );
 };
